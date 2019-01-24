@@ -63,3 +63,4 @@ spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
   **0.8版本默认登录账号的密码nacos/nacos.** 
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/0124/125758_aa62dddb_1478371.png "屏幕截图.png")
+![输入图片说明](https://images.gitee.com/uploads/images/2019/0124/130000_4da3402a_1478371.png "屏幕截图.png")
