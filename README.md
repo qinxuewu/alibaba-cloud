@@ -58,4 +58,8 @@ spring.cloud.nacos.discovery.server-addr=127.0.0.1:8848
 5. 启动 Server
 - Linux/Unix/Mac 操作系统，执行命令 sh startup.sh -m standalone
 - Windows 操作系统，执行命令 cmd startup.cmd
-- 访问控制台：http://127.0.0.1:8848/nacos
+- 访问控制台：http://127.0.0.1:8848/nacos/index.html  
+
+  **0.8版本默认登录账号的密码nacos/nacos.** 
+
+![输入图片说明](https://images.gitee.com/uploads/images/2019/0124/125758_aa62dddb_1478371.png "屏幕截图.png")
