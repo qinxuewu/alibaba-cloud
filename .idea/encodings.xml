@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-rocketmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-sentinel" charset="UTF-8" />
+  </component>
+</project>
