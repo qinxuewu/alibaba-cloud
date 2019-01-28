@@ -15,7 +15,7 @@ public class EchoController {
 
     @RequestMapping(value = "/echo/{string}", method = RequestMethod.GET)
     public String echo(@PathVariable String string) {
-        return "第一个Nacos 程序" + string;
+        return "第一个Nacos 程序,返回请求的参数：" + string;
     }
 
 
