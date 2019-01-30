@@ -1,6 +1,8 @@
 package com.example;
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
+import com.example.service.EchoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +16,8 @@ public class SentinelController {
     @Value("${spring.application.name}")
     private String appName;
 
+    @Autowired
+    private EchoService echoService;
     /***
      * @SentinelResource 注解来完成限流的埋点
      * @return
@@ -21,9 +25,11 @@ public class SentinelController {
     @SentinelResource("resource")
     @RequestMapping("/sentinel/hello")
     public Map<String,Object> hello(){
+        String result=echoService.echo(appName);
         Map<String,Object> map=new HashMap<>(2);
         map.put("appName",appName);
         map.put("method","hello");
+        map.put("result",result);
         return map;
     }
     /**
